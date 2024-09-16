@@ -1,4 +1,4 @@
-### Exercicios do processo seletivo para vaga de estágio ###
+### Exercicios do processo seletivo para vaga de estágio Target Sistemas ###
 
 Códigos feitos em python [ex1.py](ex1.py) e [ex2.py](ex2.py).
 
