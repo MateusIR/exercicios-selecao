@@ -1,0 +1,55 @@
+3) Observe o trecho de código abaixo:
+
+int INDICE = 12
+SOMA = 0
+K = 1
+enquanto K < INDICE
+faça { K = K + 1; SOMA = SOMA + K; }
+imprimir(SOMA)
+
+Ao final do processamento, qual será o valor da variável SOMA?
+	
+no final do loop, o valor da soma será 77
+
+4) Descubra a lógica e complete o próximo elemento:
+a) 1, 3, 5, 7, _9_
+b) 2, 4, 8, 16, 32, 64, __128__
+c) 0, 1, 4, 9, 16, 25, 36, __49__
+d) 4, 16, 36, 64, __100__  // essa aqui eu demorei para entender kkkk
+e) 1, 1, 2, 3, 5, 8, __13__
+f) 2,10, 12, 16, 17, 18, 19, ____ // não consegui encontrar o padrão
+
+
+5) Você está em uma sala com três interruptores, cada um conectado a uma lâmpada em salas diferentes.
+Você não pode ver as lâmpadas da sala em que está, mas pode ligar e desligar os interruptores quantas vezes quiser.
+Seu objetivo é descobrir qual interruptor controla qual lâmpada.
+Como você faria para descobrir, usando apenas duas idas até uma das salas das lâmpadas, qual interruptor controla cada lâmpada?
+
+interruptor ligado: *
+interruptor desligado: -
+salas foram nomeadas: A,B,C
+interuptores foram nomeados 1,2,3
+
+
+eu ligaria 2 interruptores, em seguida visitaria a sala 'A' salas distintas * - -
+
+1- ida
+se a luz estiver ligada:
+        sabemos que: 1 = a
+        eu retorno para a sala dos interruptores, e ajustaria assim: - * -  e iria para a sala 'B',
+                2- ida
+                se tiver ligada, é possivel definir os interruptores. 1-A, 2-B, 3-C
+                2- ida
+                se estiver desligada é possivel definir os interruptores. 1-A, 2-C, 3-B
+1- ida
+se estiver desligada:
+        sabemos que: 1 != a
+        eu retorno para a sala dos interruptores, e ajustaria assim: - - *  e iria para a sala 'C',
+                2- ida
+                se tiver ligada, é possivel definir os interruptores. 1-B,2-A,3-C
+                2- ida
+                se estiver desligada, é possivel definir os interruptores. 1-c,2-b,3-A
+
+
+
+
